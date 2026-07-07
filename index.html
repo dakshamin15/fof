@@ -1,3 +1,8 @@
+Here is your complete HTML code integrated with your Web3Forms access key, along with the layout fix for the `<span>` tag.
+
+You can copy and paste this directly into your file:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -183,8 +188,7 @@
 
             <p><strong>Dale Fickett</strong> is the Chief Executive Officer of Open Trellis, a technology that provides business owners with peer collaboration, mentorship for sales growth, and financial services.</p>
 
-            <p>As a regular author for Forbes Business Council and having worked for decades as an entrepreneur, capital markets strategy consultant, and an outsourced CIO, Dale now assists fellow business owners with:
-</p>
+            <p>As a regular author for Forbes Business Council and having worked for decades as an entrepreneur, capital markets strategy consultant, and an outsourced CIO, Dale now assists fellow business owners with:</p>
 
             <ul>
                 <li>Growth Strategy & Capital</li>
@@ -195,9 +199,15 @@
             </ul>
 
             <p> Dale is assisting clients by evaluating holistic strategies for complex business, investment, and asset management scenarios.</p>
-            <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST" class="contact-form">
+            
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                
+                <input type="hidden" name="access_key" value="79407d7d-c115-4663-90bd-6cd37cb27c1c">
+                
+                <input type="hidden" name="subject" value="New Meeting Request for Dale Fickett">
+
                 <div class="form-row">
-                    <p>To book a time with Dale:</span>
+                    <span>To book a time with Dale:</span>
                     <label>Name</label>
                     <input type="text" name="name" class="input-name" required>
                     <label>Email/Phone</label>
@@ -225,3 +235,5 @@
 
 </body>
 </html>
+
+```
